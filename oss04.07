@@ -1,0 +1,5 @@
+오늘은 api를 이용한 유튜브 자막 받아오기 실습을 하였다
+
+api_service_name = "youtube" //api키값 받아오는곳 유튜브
+api_version = "v3" // 버전 v3
+API_KEY = "AIzaSyAqjfKDJ1Yb5R4TB1mZHfVkCuF18UDuqgw" // 설정받은 키값
