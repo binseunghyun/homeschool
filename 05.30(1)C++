@@ -19,7 +19,7 @@ int main() {
         count++;
     } // 반복문 끝나면 0호차부터 30호차까지 들어있고 count = 31
 
-    sort(arr, arr+count); // 내가 정렬할 메모리 시작주소, 끝주소
+    sort(arr, arr+count); // 내가 정렬할 메모리 시작주소, 끝주소 중요, sort함수를 사용하고 싶다면 algorithm헤더파일 필수
     for(int i=0; i<count; i++) {
         fout << arr[i] << endl;
     }
