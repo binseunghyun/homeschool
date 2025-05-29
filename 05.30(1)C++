@@ -1,0 +1,29 @@
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    ifstream fin("scores.txt");
+    ofstream fout("result.txt");
+    if(!fin or !fout) {
+        cout << "파일 없음" << endl;
+            return 0;
+    }
+    string name;
+    double s;
+    int count=0;
+    double arr[100]; //고정길이배열
+    while(fin >> name >> arr[count]) { // 첫 실수는 arr[0]에 저장 그 다음은 arr[1]에 저장
+        count++;
+    } // 반복문 끝나면 0호차부터 30호차까지 들어있고 count = 31
+
+    sort(arr, arr+count); // 내가 정렬할 메모리 시작주소, 끝주소
+    for(int i=0; i<count; i++) {
+        fout << arr[i] << endl;
+    }
+    fin.close();
+    fout.close();
+    return 0;
+}
