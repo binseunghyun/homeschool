@@ -3,11 +3,10 @@
 using namespace std;
 
 int main() {
-
     string question[]={"개", "고양이", "기린", "코끼리", "표범"};
     string answer[]={"dog", "cat", "giraffe", "elephant", "leopard"};
     string ox="";
-    int score(0);
+    int score(0);  //int score = 0;
 
     cout << "영단어로 바꾸세요." << endl;
     for(int i=0;i<5;i++) {
@@ -15,7 +14,7 @@ int main() {
         cout << question[i] << ": ";
         getline(cin, a);
         if(a == answer[i]) {
-            ox += "O";
+            ox += "O";  //이전에 ox + O로 틀렸음 =필수임
             score += 20;
         }
         else {
