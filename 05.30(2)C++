@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cassert>
+#include <fstream>
+#include <algorithm>
+using namespace std;
+/*class Car {  21번문제
+    public:
+        static string getClassName() {
+            return "Car";
+    }
+};
+
+int main() {
+    cout << Car::getClassName() << endl;
+    //Car c1 -> c1.getClassName() <--객체변수명.
+    return 0;
+}
